@@ -1,14 +1,14 @@
 body {
 	margin: 0;
 	padding: 0;
-	
+
 	font-family: "Cuprum", "PT Sans", Arial, sans-serif;
 	font-size: 18px;
 	line-height: 24px;
 	font-weight: 700;
 	color: black;
 	text-transform: none;
-	
+
 	background-color: white;
 	background-image:url(../img/content/main_bg.png);
 	background-position: top center;
@@ -57,23 +57,23 @@ input[type="radio"].visually-hidden {
 	margin: 0;
 	padding: 0;
 }
-.holder{
-	display: flex; 
+.{
+	display: flex;
 	flex-wrap: wrap;
-	
+
 	margin-left: 170px;
 	margin-right: 170px;
-}	
-	
+}
+
 /* -------------------------форматирование хедера-------------- */
 a.logo{
 	position:absolute;
 	box-sizing: border-box;
 	background-color:#ee3643;
-	
+
 	width: 220px;
 	height: 47px;
-	
+
 	box-shadow: inset 0px -5px 0px #b52933;
 }
 a.logo-footer:hover,
@@ -97,15 +97,15 @@ a.logo:focus{
 }
 .searchingform input{
 	display: inline-block;
-	
+
 	width: 268px;
 	height: 42px;
 	padding-left: 18px;
-	
+
 	border: none;
-	
+
 	background-color:#293449;
-	
+
 	font-size: 17px;
 	line-height: 18px;
 }
@@ -116,7 +116,7 @@ a.logo:focus{
 .searchingform svg{
 	display: block;
 	position: absolute;
-	margin-top: 15px;	
+	margin-top: 15px;
 }
 
 .top-navigation{
@@ -183,7 +183,7 @@ a.zakaz:focus{
 	margin-block-end: 0;
 	margin: 13px 16px;
 }
-/*-------------------------средняя часть хедера---------------------*/	
+/*-------------------------средняя часть хедера---------------------*/
 .pagename{
 	display: inline-block;
 	width: 300px;
@@ -192,7 +192,7 @@ a.zakaz:focus{
 	font-size: 16px;
 	line-height: 23px;
 	color: #ee3643;
-	
+
  }
 .text{
 	 margin: 45px 50px;
@@ -209,9 +209,9 @@ a.zakaz:focus{
 	box-sizing: border-box;
 	width: 100%;
 	height: 43px;
-	
+
 	border: 3px solid #ffffff;
-	
+
 	padding-top: 8px;
 	padding-left: 10px;
 	margin: 0;
@@ -224,12 +224,12 @@ a.zakaz:focus{
 }
 .adres{
 	display: inline-block;
-	
+
 	font-family: "Cuprum";
 	font-size: 14px;
 	line-height: 24px;
 	color: #32425c;
-	
+
 	margin: 0;
 	padding-left: 10px;
 }
@@ -240,7 +240,7 @@ a.zakaz:focus{
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	
+
 	margin-left: 70px;
 	padding-top: 47px;
 }
@@ -254,14 +254,14 @@ a.zakaz:focus{
 	width: 120px;
 	height: 45px;
 	background-color: #ffffff;
-	
+
 	color: #000000;
 	font-size: 21px;
 	line-height: 21px;
 	font-weight: 400;
-	
+
 	padding-left: 15px;
-	padding-top: 11px; 
+	padding-top: 11px;
  }
 .enter svg{
 	 margin-right: 15px;
@@ -276,14 +276,14 @@ a.zakaz:focus{
 	width: 285px;
 	height: 45px;
 	background-color: #ffffff;
-	
+
 	color: #000000;
 	font-size: 21px;
 	line-height: 21px;
 	font-weight: 400;
-	
+
 	padding-left: 10px;
-	padding-top: 11px; 
+	padding-top: 11px;
 }
 .enter-catalog svg{
 	 margin-top: 1px;
@@ -294,7 +294,7 @@ a.zakaz:focus{
 	padding: 0px;
 }
 .cabinet{
-	
+
 	display: flex;
 	justify-content: space-around;
 	margin: 0px;
@@ -302,7 +302,7 @@ a.zakaz:focus{
 }
 .cabinet a{
 	margin: 0px 11px;
-	
+
 	font-size: 16px;
 	line-height: 18px;
 	font-weight: 400;
@@ -313,7 +313,7 @@ a.zakaz:focus{
 .cabinet a:hover{
 	text-decoration:underline;
 }
-.point{
+p.point:after{
 	margin: 5px;
 	width: 5px;
 	height: 5px;
@@ -327,14 +327,14 @@ a.zakaz:focus{
 	width: 150px;
 	height: 45px;
 	background-color: #ffffff;
-	
+
 	color: #000000;
 	font-size: 21px;
 	line-height: 21px;
 	font-weight: 400;
-	
+
 	padding-left: 26px;
-	padding-top: 11px; 
+	padding-top: 11px;
  }
  .user-menu a:hover{
 	color: #ee3643;
@@ -342,16 +342,16 @@ a.zakaz:focus{
  .user-menu a:focus{
 	color:#babbbd;
  }
- 
+
 .site-navigation{
 	width: 960px;
 	min-height: 57px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content:center;
-	
+
 	background-color: #32425c;
-	
+
 	box-shadow: inset 0px -5px 0px #293449;
 }
 ul.site-navigation {
@@ -362,14 +362,14 @@ ul.site-navigation {
 	box-sizing: border-box;
 	width: 135px;
 	height: 60px;
-	
+
 	font-size: 17px;
 	line-height: 17px;
 	color: #e0e1e3;
 	text-align: center;
-	
-	padding-top: 20px;	
-} 
+
+	padding-top: 20px;
+}
 .site-navigation a:hover{
 	background-color: #293449;
 	color: #ffffff; 1d2739
@@ -401,12 +401,12 @@ ul.site-navigation {
 .row{
 	display: flex;
 	margin-bottom: 20px;
-	
+
 }
 .cols{
 	margin-left: 640px;
 	display: flex;
-	flex-direction: column;	
+	flex-direction: column;
 }
 
 .main-item {
@@ -423,54 +423,54 @@ ul.site-navigation {
 	line-height: 30px;
 	font-weight: bold;
 	color: #ffffff;
-	
+
 	margin-left: 20px;
 	width: 150px;
 	height: 25px;
-		
+
 }
 .main-item a{
 	position: relative;
-	
+
 	font-size: 14px;
 	line-height: 18px;
 	color: #ffffff;
 	text-transform: uppercase;
-	
+
 	top: -35px;
 	left: 20px;
-	
+
 	width: 135px;
 	height: 38px;
-	
+
 	background-color:#e5e5e5;
 	opacity: 0.6;
 	border-radius: 5px;
-	
+
 	padding: 0;
 	margin: 0;
-	
+
 	padding: 9px 10px;
-	
+
 }
 .main-item a:hover{
 	background-color: #cccccc;
-  
+
 }
 .main-item a:focus{
-	background-color: #b2b2b2;			
+	background-color: #b2b2b2;
 }
 
 
 
 .box-material svg{
 	position: relative;
-	
+
 	top:-35px;
 	left: 80px;
-	
+
 	width: 44px;
-	height: 65px;	
+	height: 65px;
 }
 .box-material{
 	width: 300px;
@@ -481,12 +481,12 @@ ul.site-navigation {
 
 .box-instrument svg{
 	position: relative;
-	
+
 	top:-35px;
 	left: 80px;
-	
+
 	width: 75px;
-	height: 65px;	
+	height: 65px;
 }
 
 .box-instrument{
@@ -497,12 +497,12 @@ ul.site-navigation {
 
 .box-tech svg{
 	position: relative;
-	
+
 	top:-35px;
 	left: 80px;
-	
+
 	width: 80px;
-	height: 65px;	
+	height: 65px;
 }
 .box-tech{
 	width: 300px;
@@ -512,29 +512,29 @@ ul.site-navigation {
 
 .box-discont svg{
 	position: relative;
-	
+
 	top:-35px;
 	left: 80px;
-	
+
 	width: 60px;
-	height: 75px;	
+	height: 75px;
 }
 .box-discont{
 	width: 300px;
 	height: 123px;
 	background-color: #8ed78f;
 	margin-bottom: 20px;
-	
+
 }
 
 .box-delivery svg{
 	position: relative;
-	
+
 	top:-35px;
 	left: 80px;
-	
+
 	width: 80px;
-	height: 65px;	
+	height: 65px;
 }
 .box-delivery{
 	width: 300px;
@@ -568,7 +568,7 @@ ul.site-navigation {
 	font-size: 18px;
 	line-height: 24px;
 	color: #ffffff;
-	
+
 	padding: 0;
 	margin: 2px 0;
 
@@ -580,13 +580,13 @@ ul.site-navigation {
 .opencat{
 	position: absolute;
 	display: inline-block;
-	box-sizing: border-box; 
+	box-sizing: border-box;
 	top: 205px;
 	left: 25px;
-	
+
 	width: 195px;
 	height: 38px;
-	
+
 	font-size: 14px;
 	line-height: 18px;
 	color: #ffffff;
@@ -611,10 +611,10 @@ ul.site-navigation {
 	box-sizing: border-box;
 	background-color: transparent;
 	border: none;
-	
+
 	top: 115px;
 	left: 25px;
-	
+
 }
 .btnright{
 	position: absolute;
@@ -622,7 +622,7 @@ ul.site-navigation {
 	box-sizing: border-box;
 	background-color:transparent;
 	border: none;
-	
+
 	top: 115px;
 	left: 578px;
 
@@ -632,10 +632,10 @@ ul.site-navigation {
 	position: absolute;
 	width: 10px;
 	height: 10px;
-	
+
 	top: 220px;
 	left: 290px;
-	
+
 	border-radius: 100%;
 	background-color: #ffffff;
 }
@@ -644,10 +644,10 @@ ul.site-navigation {
 	position: absolute;
 	width: 10px;
 	height: 10px;
-	
+
 	top: 220px;
 	left: 312px;
-	
+
 	border: 2px solid #ffffff;
 	border-radius: 100%;
 	background-color: #ee3643;
@@ -657,10 +657,10 @@ ul.site-navigation {
 	position: absolute;
 	width: 10px;
 	height: 10px;
-	
+
 	top: 740px;
 	left: 505px;
-	
+
 	border: 2px solid #ffffff;
 	border-radius: 100%;
 	background-color: #ee3643;
@@ -671,10 +671,10 @@ ul.site-navigation {
 	position: absolute;
 	width: 10px;
 	height: 10px;
-	
+
 	top: 740px;
 	left: 505px;
-	
+
 	border: 2px solid #ffffff;
 	border-radius: 100%;
 	background-color: #ee3643;
@@ -704,18 +704,18 @@ ul.site-navigation {
 	box-sizing: border-box;
 	width: 253px;
 	height: 38px;
-	
+
 	font-size: 14px;
 	line-height: 18px;
 	color: #ffffff;
 	text-transform: uppercase;
 	text-align: center;
-	
+
 	background-color: #ee3643;
 	border-radius: 5px;
-	
+
 	padding: 10px;
-	
+
 }
 .pop-header a:hover,
 .info a:hover,
@@ -739,7 +739,7 @@ ul.popitems{
 .popitems li{
 	width: 220px;
 	height: 318px;
-	border: 1px solid #eaeaea;	
+	border: 1px solid #eaeaea;
 }
 .popitems h1{
 	width: 191px;
@@ -776,7 +776,7 @@ ul.popitems{
 	width: 85px;
 	margin: 0 auto 20px;
 	padding: 11px 30px;
-	
+
 	background: #ee3643;
 	border-radius: 3px;
 }
@@ -785,10 +785,10 @@ ul.popitems{
 	position: absolute;
 	top: 0;
 	right: -20px;
-	
+
 	width: 0;
 	height: 0;
-	
+
 	border: 20px solid #ffffff;
 	border-left-color: #ee3643;
 }
@@ -829,9 +829,9 @@ ul.poplable{
   margin-right: 0;
 }
 .poplable li:hover{
-	
+
 	box-shadow: 0px 12px 50px -20px black;
-	
+
 }
 .poplable li:focus{
 	box-shadow: 0px 12px 50px -20px black;
@@ -839,20 +839,20 @@ ul.poplable{
 }
 .poplable img{
 	padding: 0px;
-	margin-top: 50px; 
+	margin-top: 50px;
 }
 .poplable .interskol img{
 	padding: 0px;
-	margin-top: 25px; 
+	margin-top: 25px;
 }
 .poplable .lg img,
 .poplable .mtb img{
 	padding: 0px;
-	margin-top: 30px; 
+	margin-top: 30px;
 }
 .poplable .aeg img{
 	padding: 0px;
-	margin-top: 20px; 
+	margin-top: 20px;
 }
 
 
@@ -861,14 +861,14 @@ ul.poplable{
 	background-color: #f4f8f9;
 	height: 510px;
 }
-.service-holder{
+.service-{
 	margin-top: 65px;
 	width: 400px;
 	height: 150px;
 }
 .serivce-menu{
 	position: absolute;
-	
+
 	top:1800px;
 	left:170px;
 	margin-top: 30px;
@@ -878,7 +878,7 @@ ul.poplable{
 	position: absolute;
 	width: 12px;
 	height: 260px;
-	
+
 	top:1765px;
 	left: 403px;
 	background-image: url(../img/vert_menu_service.png);
@@ -921,7 +921,7 @@ ul.poplable{
 	font-size: 30px;
 	line-height: 30px;
 	text-transform: uppercase;
-	
+
 }
 .service p,
 .about p,
@@ -968,7 +968,7 @@ ul.poplable{
 	width: 380px;
 	font-size: 18px;
 }
-	
+
 .kredit{
 	flex-direction: column;
 	background-image: url(../img/credit.png);
@@ -991,24 +991,24 @@ ul.poplable{
 	font-size: 36px;
 	line-height: 36px;
 	color: #32425c;
-	
+
 }
 
 .infobok a{
 	margin-top: 35px;
-	display: inline-block; 
-	
+	display: inline-block;
+
 	width: 195px;
 	height: 38px;
-	
+
 	font-size: 14px;
 	line-height: 18px;
 	color: #ffffff;
 	text-transform: uppercase;
 	text-align: center;
-	
+
 	background-color: #ee3643;
-	border-radius: 5px;	
+	border-radius: 5px;
 }
 .about a:hover,
 .infobok a:hover{
@@ -1024,7 +1024,7 @@ ul.poplable{
 	padding-top: 12px;
 }
 
-.info-holder p{
+.info- p{
 	margin: 0;
 	padding: 0;
 }
@@ -1044,31 +1044,31 @@ ul.poplable{
 	list-style-image: url(../img/line_red.png);
 	margin: 20px 0px;
 	padding: 0;
-	
+
 	font-family: "Cuprum";
 	font-weight: 400;
 	font-size: 18px;
 	line-height: 20px;
 	color: #000000;
-	
+
 }
 
 .about a{
 	margin-top: 20px;
 	padding-top: 10px;
-	display: inline-block; 
+	display: inline-block;
 	box-sizing: border-box;
 	width: 220px;
 	height: 40px;
-	
+
 	font-size: 14px;
 	line-height: 18px;
 	color: #ffffff;
 	text-transform: uppercase;
 	text-align: center;
-	
+
 	background-color: #ee3643;
-	border-radius: 5px;	
+	border-radius: 5px;
 
 }
 .popup-contact{
@@ -1089,16 +1089,16 @@ a.writeus{
 	box-sizing: border-box;
 	width: 300px;
 	height: 38px;
-	
+
 	font-size: 14px;
 	line-height: 18px;
 	color: #ffffff;
 	text-transform: uppercase;
 	text-align: center;
-	
+
 	background-color: #ee3643;
 	border-radius: 5px;
-	
+
 	padding: 10px;
 }
 /*--------------------------------------------------------catalog.html-----------------------------------*/
@@ -1134,8 +1134,8 @@ a.writeus{
 	height: 1200px;
 	width: 960px;
 	margin-bottom: 150px;
-	
-	
+
+
 }
 .cols-filtr{
 	margin-top: 20px;
@@ -1156,7 +1156,7 @@ a.writeus{
 	padding-bottom: 15px;
 	padding-top: 15px;
 	border-radius: 5px;
-	
+
 	font-family: "PTSans";
 	font-size: 13px;
 	line-height: 18px;
@@ -1191,7 +1191,7 @@ a.writeus{
 	padding-top: 10px;
 	padding-bottom: 10px;
 	margin-bottom: 30px;
-	
+
 	font-family: "PTSans";
 	font-size: 17px;
 	line-height: 18px;
@@ -1207,7 +1207,7 @@ a.writeus{
 	line-height: 20px;
 	font-weight: 400;
 	color: #000000;
-  
+
  }
  .lable-checkbox li:nth-last-child(1){
 	 margin-bottom: 20px;
@@ -1226,7 +1226,7 @@ a.writeus{
 	border-radius: 5px;
 	width: 140px;
 	height: 40px;
-	
+
 	font-family: "PTSans";
 	font-size: 13px;
 	line-height: 18px;
@@ -1241,19 +1241,19 @@ a.writeus{
 	justify-content: space-between;
 	align-items: center;
 	margin-top: 20px;
-	
+
 	width: 720px;
 	height: 40px;
 	background-color: #f7f3ec;
 	border-radius: 5px;
-	
+
 	font-family: "PTSans";
 	font-size: 13px;
 	line-height: 18px;
 	font-weight: 400;
 	color: #000000;
 	text-transform: uppercase;
-	
+
  }
 .sort p{
 	margin: 0;
@@ -1269,7 +1269,7 @@ a.writeus{
  .sort a:hover{
 	color: #000000;
 	text-decoration: underline #ee3643;
-	border-bottom: none; 
+	border-bottom: none;
  }
 .sort a:focus{
 	color: #ee3643;
@@ -1350,22 +1350,22 @@ a.writeus{
   display: inline-block;
   width: 218px;
   margin-bottom: 20px;
-  
+
   line-height: 20px;
   font-weight: bold;
   text-align: center;
-  
+
   border: 1px solid #ccc;
 }
 .catalog-item .actions {
   position: absolute;
   top: 0;
   left: 0;
-  
+
   width: 218px;
   height: 88px;
   padding: 40px 0;
-  
+
   background-color: rgba(255,255,255,0.9);
   z-index: 10;
 }
@@ -1377,12 +1377,12 @@ a.writeus{
   margin: 0 auto;
   margin-bottom: 7px;
   padding: 7px 0;
-  
+
   background-color: #63a63e;
   border: 3px solid #63a63e;
   border-bottom-color: #367315;
   border-radius:3px;
-  
+
   color: white;
   font-size: 14px;
   font-weight: normal;
@@ -1453,17 +1453,17 @@ page-numb a:active{
 	background-color: #32425c;
 	margin: 0;
 }
-.holder-footer{
+.-footer{
 	width: 960px;
 }
 a.logo-footer{
 	position:relative;
 	box-sizing: border-box;
 	background-color:#ee3643;
-	
+
 	width: 220px;
 	height: 70px;
-	
+
 	box-shadow: inset 0px -5px 0px #b52933;
 	margin-right: 170px;
 	margin-bottom: 30px;
@@ -1482,7 +1482,7 @@ a.logo-footer{
 .footer-midletext p{
 	font-size: 18px;
 	line-height: 24px;
-	color: #f1f5f7;	
+	color: #f1f5f7;
 	margin: 0px;
 	padding: 0px;
 }
@@ -1496,7 +1496,7 @@ a.logo-footer{
 .nav li{
 	margin-right:55px;
 	padding-top: 40px;
-	text-align: center; 
+	text-align: center;
 }
 .nav li:nth-child(5n) {
   margin-right: 0;
@@ -1505,7 +1505,7 @@ a.logo-footer{
 	display: flex;
 	flex-direction: row;
 	flex-direction: column;
-	margin-right: 100px;	
+	margin-right: 100px;
 }
 .listitems li{
 	width: 80px;
@@ -1518,25 +1518,25 @@ a.logo-footer{
 	margin: 0;
 	padding: 0;
 }
-.down-footer-holder{
+.down-footer-{
 	width: 960px;
 	padding-top: 40px;
 	padding-bottom: 40px;
-	
+
 }
 .copyright{
 	width: 235px;
-	
+
 	padding: 0px;
 	margin-right: 160px;
 }
 
-.icons-holder{	
+.icons-{
 	display: flex;
 	justify-content: space-between;
 	width: 135px;
 	margin-right: 32px;
-	
+
 }
 li.icons{
   position: relative;
@@ -1574,7 +1574,7 @@ li.icons:focus{
 .footerdowntext p{
 	font-size: 16px;
 	line-height: 18px;
-	color: #ffffff;	
+	color: #ffffff;
 	margin: 0px;
 	padding: 0px;
 }
@@ -1603,7 +1603,7 @@ li.icons:focus{
 	width: 22px;
 	height: 22px;
 	top: 10px;
-	left: 908px; 
+	left: 908px;
 	background-color: transparent;
 	border: 0;
 }
@@ -1616,7 +1616,7 @@ li.icons:focus{
 	width: 30px;
 	height: 4px;
 	background-color: #ee3643;
-	
+
 }
 .button:after{
 	transform: rotate(-45deg);
@@ -1626,7 +1626,7 @@ li.icons:focus{
 }
 /*----------------------форма обратной связи--------------------------------*/
 .modalform {
-  display: none;	
+  display: none;
   position: fixed;
   background-color: #ffffff;
   top: 120px;
@@ -1636,7 +1636,7 @@ li.icons:focus{
   margin-left: -320px;
   border-top: 7px solid #ff5357;
   z-index: 11;
-  
+
   box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
 }
 .modalform-show{
@@ -1705,14 +1705,14 @@ li.icons:focus{
 	width: 220px;
 	padding: 5px 15px;
 	padding-right: 2px;
-	
+
 	font-size: 13px;
 	line-height: 18px;
 	font-weight: 400;
-	
-	
+
+
 	color: #a9a9a9;
-	
+
 	border: 2px solid #dee3e4;
 }
 .flextext{
@@ -1742,14 +1742,14 @@ textarea{
 .subbutton{
 	width: 460px;
 	height: 40px;
-	
+
 	background-color: #ee3643;
-	
+
 	margin-top: 38px;
 	margin-bottom: 38px;
-	
+
 	border-radius: 5px;
-	
+
 	color: #ffffff;
 	font-size: 14px;
 	line-height: 18px;
@@ -1767,11 +1767,11 @@ textarea{
 	padding: 0;
 	margin-top: 20px;
 	margin-left: 30px;
-	
+
 	font-size: 30px;
 	line-height: 30px;
 	font-weight: 400;
-	
+
 }
 .btns{
 	margin-top: 50px;
@@ -1787,7 +1787,7 @@ textarea{
 	text-align: center;
 	padding-top: 12px;
 	margin: 40px 20px;
-	
+
 	font-size: 14px;
 	line-height: 18px;
 	font-weight: 400;
@@ -1805,26 +1805,26 @@ textarea{
 	position: absolute;
 	top: 17px;
 	right: 10px;
-	
+
 	width: 30px;
 	height: 30px;
-	
+
 	background-color: transparent;
 	border: 0;
-	
+
 	cursor: pointer;
 }
 .modalform-close::before,
 .modalform-close::after {
 	content: "";
-	
+
 	position: absolute;
 	top: 13px;
 	left: 0px;
-	
+
 	width: 30px;
 	height: 3px;
-	
+
 	background-color: #ee3643;
 }
 
