@@ -2,7 +2,7 @@ body {
 	margin: 0;
 	padding: 0;
 
-	font-family: "Cuprum", "PT Sans", Arial, sans-serif;
+	font-family: "cuprum", "ptsans", Arial, sans-serif;
 	font-size: 18px;
 	line-height: 24px;
 	font-weight: 700;
@@ -18,10 +18,12 @@ body {
 a {
 	text-decoration: none;
 }
+
 img{
 	max-width: 100%;
 	height: auto;
 }
+
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
@@ -39,6 +41,34 @@ input[type="radio"].visually-hidden {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+@font-face{
+	font-family: cuprum;
+	src:local("fonts/cuprum.woff2"),
+		local("fonts/cuprum.woff");
+
+	font-family: cuprumbold;
+	src:local("fonts/cuprumbold.woff2"),
+		local("fonts/cuprumbold.woff"),
+	font-weight: bold;
+
+	font-family: cuprumitalic;
+	src:local("fonts/cuprumitalic.woff2"),
+		local("fonts/cuprumitalic.woff");
+
+	font-family: cuprumbolditalic;
+	src:local("fonts/cuprumbolditalic.woff2"),
+		local("fonts/cuprumbolditalic.woff"),
+	font-weight: bold;
+
+	font-family: ptsans;
+	src:local("fonts/ptsans.woff2"),
+		local("fonts/ptsans.woff");
+	
+	font-family: ptsansbold;
+	src:local("fonts/ptsansbold.woff2"),
+		local("fonts/ptsansbold.woff");
+	font-weight: bold;	
+	}
 /* ---------------------------одщее форматирование-----------------*/
 .top-menu{
 	background-color:#293449;
@@ -225,7 +255,7 @@ a.zakaz:focus{
 .adres{
 	display: inline-block;
 
-	font-family: "Cuprum";
+	font-family: "cuprum";
 	font-size: 14px;
 	line-height: 24px;
 	color: #32425c;
@@ -916,7 +946,7 @@ ul.poplable{
 .contact h1,
 .about h1,
 .popup-contact h1{
-	font-family: "Cuprum";
+	font-family: "cuprum";
 	font-weight: 400;
 	font-size: 30px;
 	line-height: 30px;
@@ -928,7 +958,7 @@ ul.poplable{
 .contact p,
 .about p,
 .popup-contact p{
-	font-family: "PT Sans";
+	font-family: "ptsans";
 	font-size: 13px;
 	line-height: 24px;
 	font-weight: 400;
@@ -986,7 +1016,7 @@ ul.poplable{
 }
 .infobok h1{
 	display: inline-block;
-	font-family: "Cuprum";
+	font-family: "cuprum";
 	font-weight: 400;
 	font-size: 36px;
 	line-height: 36px;
@@ -1045,7 +1075,7 @@ ul.poplable{
 	margin: 20px 0px;
 	padding: 0;
 
-	font-family: "Cuprum";
+	font-family: "cuprum";
 	font-weight: 400;
 	font-size: 18px;
 	line-height: 20px;
@@ -1137,7 +1167,7 @@ a.writeus{
 
 
 }
-.cols-filtr{
+.cols-filter{
 	margin-top: 20px;
 	margin-right: 20px;
 	height: 750px;
@@ -1145,10 +1175,10 @@ a.writeus{
 	display: flex;
 	flex-direction: column;
 }
-.filtr{
+.filter{
 	border-bottom: 1px solid #e5e5e5;
 }
-.cols-filtr p{
+.cols-filter p{
 	margin: 0px;
 	box-sizing: border-box;
 	background-color: #f7f3ec;
@@ -1164,7 +1194,7 @@ a.writeus{
 	color: #000000;
 	text-transform: uppercase;
 }
-.cols-filtr h2{
+.cols-filter h2{
 	padding: 0;
 	margin: 0;
 	margin-bottom: 20px;
@@ -1386,7 +1416,7 @@ a.writeus{
   color: white;
   font-size: 14px;
   font-weight: normal;
-  font-family: "Cuprum", sans-serif;
+  font-family: "cuprum", sans-serif;
   line-height: 18px;
   text-decoration: none;
   text-transform: uppercase;
@@ -1453,7 +1483,7 @@ page-numb a:active{
 	background-color: #32425c;
 	margin: 0;
 }
-.-footer{
+.footer{
 	width: 960px;
 }
 a.logo-footer{
@@ -1531,7 +1561,7 @@ a.logo-footer{
 	margin-right: 160px;
 }
 
-.icons-{
+.icons{
 	display: flex;
 	justify-content: space-between;
 	width: 135px;
@@ -1722,7 +1752,7 @@ li.icons:focus{
 .tab{
 	margin-top: 20px;
 }
-textarea{
+.message{
 	box-sizing: border-box;
 	font-size: 13px;
 	line-height: 18px;
@@ -1792,7 +1822,7 @@ textarea{
 	line-height: 18px;
 	font-weight: 400;
 }
-.btnzak{
+.btnorder{
 	background-color:  #ee3643;
 	color: #ffffff;
 }
