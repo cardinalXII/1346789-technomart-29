@@ -1,3 +1,32 @@
+@font-face{
+	font-family: cuprum;
+	src:local("fonts/cuprum.woff2"),
+		local("fonts/cuprum.woff");
+
+	font-family: cuprumbold;
+	src:local("fonts/cuprumbold.woff2"),
+		local("fonts/cuprumbold.woff"),
+	font-weight: bold;
+
+	font-family: cuprumitalic;
+	src:local("fonts/cuprumitalic.woff2"),
+		local("fonts/cuprumitalic.woff");
+
+	font-family: cuprumbolditalic;
+	src:local("fonts/cuprumbolditalic.woff2"),
+		local("fonts/cuprumbolditalic.woff"),
+	font-weight: bold;
+
+	font-family: ptsans;
+	src:local("fonts/ptsans.woff2"),
+		local("fonts/ptsans.woff");
+	
+	font-family: ptsansbold;
+	src:local("fonts/ptsansbold.woff2"),
+		local("fonts/ptsansbold.woff");
+	font-weight: bold;	
+}
+
 body {
 	margin: 0;
 	padding: 0;
@@ -41,63 +70,44 @@ input[type="radio"].visually-hidden {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-@font-face{
-	font-family: cuprum;
-	src:local("fonts/cuprum.woff2"),
-		local("fonts/cuprum.woff");
 
-	font-family: cuprumbold;
-	src:local("fonts/cuprumbold.woff2"),
-		local("fonts/cuprumbold.woff"),
-	font-weight: bold;
-
-	font-family: cuprumitalic;
-	src:local("fonts/cuprumitalic.woff2"),
-		local("fonts/cuprumitalic.woff");
-
-	font-family: cuprumbolditalic;
-	src:local("fonts/cuprumbolditalic.woff2"),
-		local("fonts/cuprumbolditalic.woff"),
-	font-weight: bold;
-
-	font-family: ptsans;
-	src:local("fonts/ptsans.woff2"),
-		local("fonts/ptsans.woff");
-	
-	font-family: ptsansbold;
-	src:local("fonts/ptsansbold.woff2"),
-		local("fonts/ptsansbold.woff");
-	font-weight: bold;	
-	}
-/* ---------------------------одщее форматирование-----------------*/
-.top-menu{
-	background-color:#293449;
-}
-.middle-navigation{
-	background-color:#f3f6f8;
-	color: #32425c;
-	padding-bottom: 60px;
- }
-.top-navigation{
-	margin: 12px 44px;
-	width: 960px;
-}
 .notmark{
 	list-style: none;
 	margin: 0;
 	padding: 0;
 }
-.{
-	display: flex;
-	flex-wrap: wrap;
 
-	margin-left: 170px;
-	margin-right: 170px;
+.holder{
+	width: 1200px;
+	height: 100%;
+	margin-left: auto;
+	margin-right: auto;
 }
 
+/* ---------------------------общее форматирование хедера-----------------*/
+
+.top-menu{
+	display: flex;
+	flex-wrap: wrap;
+	background-color:#293449;
+	width: 1200px;
+	height: 42px;
+	padding-right: 130px;
+	padding-left: 130px;
+	box-sizing: border-box;
+	
+}
+
+.middle-menu{
+	display: flex;
+	flex-wrap: wrap;
+	background-color:#f3f6f8;
+	color: #32425c;
+	padding-bottom: 60px;
+ }
+
 /* -------------------------форматирование хедера-------------- */
-a.logo{
-	position:absolute;
+.logo{
 	box-sizing: border-box;
 	background-color:#ee3643;
 
@@ -106,164 +116,157 @@ a.logo{
 
 	box-shadow: inset 0px -5px 0px #b52933;
 }
-a.logo-footer:hover,
-a.logo:hover{
+.logo-footer:hover,
+.logo:hover{
 	background-color:#ca2c37;
 	box-shadow: inset 0px -5px 0px #9a212a;
 }
-a.logo-footer:focus,
-a.logo:focus{
+.logo-footer:focus,
+.logo:focus{
 	background-image: #ba2732;
 	box-shadow: inset 0px -5px 0px #8e1e26;
 }
-.logo svg{
-	display: block;
-	position:absolute;
-	margin: 11px 40px;
-}
-.searchingform{
-	margin-left: 240px;
+/*-------------------------Форма поиска---------------------*/
+.searching-form{
+	box-sizing: border-box;
+	display: flex;
 	color: #ffffff;
-}
-.searchingform input{
-	display: inline-block;
-
-	width: 268px;
+	width: 271px;
 	height: 42px;
+	margin: 0;
+	padding: 0;
 	padding-left: 18px;
-
+	align-items: center;
+}
+.searching-form input{
 	border: none;
-
 	background-color:#293449;
 
 	font-size: 17px;
 	line-height: 18px;
 }
-.searchingform input:focus{
+.searching-form: focus{
 	background-color:#ffffff;
 	color: black;
 }
-.searchingform svg{
-	display: block;
-	position: absolute;
-	margin-top: 15px;
-}
 
-.top-navigation{
-	display: inline-block;
-	width: 150px;
+/*-------------------------Границы кнопок верхнего меню---------------------*/
+.lable-holder{
+	box-sizing: border-box;
+	display: flex;
+	width: 140px;
 	height: 42px;
-	margin: 0;
-}
-.top-navigation a{
-	position: absolute;
-	margin-left: 18px;
-	margin-top: 10px;
-	vertical-align: middle;
-}
-.top-navigation,
-.top-navigation a,
-.top-menu a{
-	font-size: 17px;
-	line-height: 18px;
-	color: #e0e1e3;
+	padding-left: 20px;
+	align-items: center;
 
 }
-.top-navigation:hover,
-.top-navigation a:hover,
-.searchingform svg path:hover,
-.top-menu a :hover,
-.site-navigation a:hover{
-	color: #ffffff;
-	background-color:#212a3a;
-	fill: #ffffff;
+
+.cart{
+	box-sizing: border-box;
+	border: 2px solid red;
 }
-
-.top-navigation:focus,
-.top-navigation a:focus,
-.searchingform svg path:focus,
-.top-menu a:focus,
-.site-navigation a:focus,{
-	color:#babbbd;
-	background-color:#161d29;
-	fill: #ee3643;
-}
-
-
-a.zakaz{
-	display: inline-block;
+/*-------------------------Кнопка оформления заказа---------------------*/
+.checkout-holder{
+	box-sizing: border-box;
+	display: flex;
 	background-color:#63a63e;
-	color: #e0e1e3;
+	color: #FFFFFF;
 	width: 150px;
 	height: 42px;
 	margin: 0;
+	padding-top: 9px;
+	padding-right: 16px;
+	padding-bottom: 9px;
+	padding-left: 19px;
+	align-items: center;
 }
-.zakaz p:hover,
-a.zakaz:hover{
+
+.checkout{
+	box-sizing: border-box;
+	font-family: cuprum;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 24px;
+	display: flex;
+	align-items: center;
+}
+a.checkout:hover{
 	background-color:#5fbb2d;
 	color:#b6c8ae;
 }
-.zakaz p:focus,
-a.zakaz:focus{
+a.checkout:focus{
 	background-color:#518534;
 	color:#abc0a1;
 }
-.zakaz p{
-	margin-block-start:0;
-	margin-block-end: 0;
-	margin: 13px 16px;
-}
+
 /*-------------------------средняя часть хедера---------------------*/
-.pagename{
-	display: inline-block;
-	width: 300px;
-	height: 158px;
-	font-style: italic;
+.main-information{
+	box-sizing: content-box;
+	display: flex;
+	width: 205px;
+	height: 71px;
+	margin-left: 160px;	
+}
+.text{
+	box-sizing: content-box;
+	font-family: cprum;
 	font-size: 16px;
+	font-style: italic;
+	font-weight: 400;
 	line-height: 23px;
-	color: #ee3643;
+	letter-spacing: 0px;
+	text-align: left;
+	color: #EE3643;
+
 
  }
-.text{
-	 margin: 45px 50px;
-	 width: 210px;
- }
-.contact{
-	margin-left: 22px;
-	width: 280px;
+.contacts{
 	display: flex;
 	flex-wrap: wrap;
-	align-content: center;
-}
-.contact a{
+	align-items: center;
 	box-sizing: border-box;
-	width: 100%;
-	height: 43px;
-
-	border: 3px solid #ffffff;
-
-	padding-top: 8px;
-	padding-left: 10px;
-	margin: 0;
-	color: #ee3643;
-	font-size: 21px;
-	line-height: 21px;
+	
+	width: 270px;
+	margin-left: 20px;
 }
+
 .contact svg{
 	margin-right: 40px;
 }
-.adres{
-	display: inline-block;
+.phone{
+	display: flex;
+	justify-content: center;
+	box-sizing: border-box;
 
-	font-family: "cuprum";
+	background-color: #F3F7F9;
+
+	width: 100%;
+	height: 45px;
+
+	font-family: cuprum;
+	font-weight: bold;
+	font-size: 21px;
+	line-height: 30px;
+	color: #EE3643;
+
+	align-items: center;
+}
+.adress{
+	display: flex;
+	box-sizing: border-box;
+	width: 250px;
+	height: 24px;
+
+	font-family: cuprum;
+	font-weight: 400;
 	font-size: 14px;
 	line-height: 24px;
-	color: #32425c;
+	color: #32425C;
 
-	margin: 0;
-	padding-left: 10px;
+	text-align: center;
+	align-items: center;
 }
-
 
 .user-menu{
 	width: 285px;
@@ -324,7 +327,6 @@ a.zakaz:focus{
 	padding: 0px;
 }
 .cabinet{
-
 	display: flex;
 	justify-content: space-around;
 	margin: 0px;
@@ -374,11 +376,17 @@ p.point:after{
  }
 
 .site-navigation{
-	width: 960px;
-	min-height: 57px;
+	
 	display: flex;
 	flex-wrap: wrap;
-	justify-content:center;
+	justify-content: center;
+
+	width: 940px;
+	min-height: 60px;
+
+	margin-left: 130px;
+	margin-right: 130px;
+	margin-top: 40px;
 
 	background-color: #32425c;
 
@@ -390,7 +398,7 @@ ul.site-navigation {
 .site-navigation a{
 	display: inline-block;
 	box-sizing: border-box;
-	width: 135px;
+	width: 122px;
 	height: 60px;
 
 	font-size: 17px;
@@ -424,9 +432,11 @@ ul.site-navigation {
 }
 
 /*---------------------------------------------------------index.html------------------------------------*/
-.flex-item{
-	margin-top: 60px;
-	padding: 0;
+.holder-items{
+	display: flex;
+	width: 940px;
+	margin-left: 130px;
+	margin-right: 130px;
 }
 .row{
 	display: flex;
@@ -434,7 +444,7 @@ ul.site-navigation {
 
 }
 .cols{
-	margin-left: 640px;
+	
 	display: flex;
 	flex-direction: column;
 }

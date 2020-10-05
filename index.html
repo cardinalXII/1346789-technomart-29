@@ -1,4 +1,4 @@
-credit.png<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="utf-8">
@@ -6,125 +6,119 @@ credit.png<!DOCTYPE html>
     <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-<header>
+<header class="holder">
 <!------------------------------------------Верхнее меню хедера----------------------------------->
   <div class="top-menu">
 <!----------------------------------------------Логотип-------------------------------------------------->
-    <div class="holder">
-      <a class="logo">
-        ТЕХНОМАРТ
-      </a>
+    <a class="logo">
+      ТЕХНОМАРТ
+    </a>
 <!-----------------------------------------поиск------------------------------------------------->
-      <div class="searching-form">
+    <div class="searching-form">
 <!---------- иконка поиска--------->
-        <img src="img/svg/icon-search.svg" alt="Поиск">
-        <form action="https://echo.htmlacademy.ru"  class="" id="serchout" method="POST">
-          <label for="search">
-            <span class="visually=hidden"> Поиск:</span>
-          </label>
-          <input type="search" id="search" name="search" class="search" placeholder="Поиск:">
-        </form>
-      </div>
-<!----------------------------------------закладки---------------------------------------------->
-      <div class="top-navigation">
-        <label for="bookmark">
-          <a href="#">
-            <!-- ---------иконка закладок------->
-            <img src="img/svg/icon-bookmark.svg" alt="Закладки">
-            Закладки:<output name="bookmark" id="bookmark">0</output>
-          </a>
+      <img src="img/svg/icon-search.svg" alt="Поиск">
+      <form action="https://echo.htmlacademy.ru"  class="" id="serchout" method="POST">
+        <label for="search">
+          <span class="visually-hidden"> Поиск:</span>
         </label>
-      </div>
-<!----------------------------------------Корзина------------------------------------------------------->
-      <div class="top-navigation">
-<!-----------иконка Корзины-------->
-        <label for="cart">
-          <a href="#">
-            <img src="img/svg/icon-cart.svg" alt="Корзина">
-            Корзина:<output name="cart" id="cart">10</output>
-          </a>
-        </label>
-      </div>
-<!---------------------------------------оформление заказа-------------------------------------------->
-      <a href="#" class="zakaz"><p>Оформить заказ</p></a>
+        <input type="search" id="search" name="search" class="search" placeholder="Поиск:">
+      </form>
     </div>
+<!----------------------------------------закладки---------------------------------------------->
+      <label for="bookmark" class="lable-holder">
+        <a href="#">
+          <!-- ---------иконка закладок------->
+          <img src="img/svg/icon-bookmark.svg" alt="Закладки">
+          Закладки:<output name="bookmark" id="bookmark">0</output>
+        </a>
+      </label>
+<!----------------------------------------Корзина------------------------------------------------------->
+<!-----------иконка Корзины-------->
+      <label for="cart" class="lable-holder">
+        <a href="#" class="cart">
+          <img src="img/svg/icon-cart.svg" alt="Корзина">
+          Корзина:<output name="cart" id="cart">10</output>
+        </a>
+      </label>
+<!---------------------------------------оформление заказа-------------------------------------------->
+    <a href="#" class="checkout-holder">
+      <span class="checkout">Оформить заказ</span>
+    </a> 
   </div>
 <!------------------------------------- СРЕДНЯЯ ЧАСТЬ ХЕДЕРА ------------------------------->
-  <div class="middle-navigation">
-    <div class="holder">
-      <div class="pagename">
-        <div class="text">
-          Интернет-магазин строительных материалов <br> и инструментов для ремонта
-        </div>
-      </div>
-      <div class="contact">
-        <a href="tel:+78125550555">
+  <div class="middle-menu">
+    <div class="main-information">
+      <span class="text">
+        Интернет-магазин строительных материалов <br>и инструментов для ремонта
+     </span>
+    </div>
+    <div class="contacts">
+      <a href="tel:+78125550555" class="phone">
 <!------------ иконка телефона ------------------------>
-         <img src="img/svg/icon-phone.svg" alt="телефон">
-         +7 (812) 555-05-55
-        </a>
-        <div class="adress">
-          г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-        </div>
-      </div>
-<!-----------------------------------------МЕНЮ ПОЛЬЗОВАТЕЛЯ----------------------------------------------->
-<!----------------------------------------------логин------------------------------------------------->
-      <div class="user-menu">
-        <a href="#" class="enter">
-<!-----------------иконка входа ----------------------------------->
-          <img src="img/svg/icon-login.svg" alt="вход">Войти
-        </a>
-<!----------------------------------------регистрация------------------------------------------------->
-        <a href="#" class="registration">Регистрация</a>
+        <img src="img/svg/icon-phone.svg" alt="телефон">
+        <span> +7 (812) 555-05-55</span>
+      </a>
+      <div class="adress">
+        г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
       </div>
     </div>
-  </div>
+<!-----------------------------------------МЕНЮ ПОЛЬЗОВАТЕЛЯ----------------------------------------------->
+<!----------------------------------------------логин------------------------------------------------->
+    <div class="user-menu">
+      <a href="#" class="enter">
+<!-----------------иконка входа ----------------------------------->
+        <img src="img/svg/icon-login.svg" alt="вход">Войти
+      </a>
+<!----------------------------------------регистрация------------------------------------------------->
+      <a href="#" class="registration">Регистрация</a>
+    </div>
 <!----------------------------------------------НИЖНЕЕ МЕНЮ ХЕДЕРА ------------------------------>
-  <ul class="site-navigation notmark holder">
-    <li>
-      <a>
-        Главная
-      </a>
-    </li>
-    <li>
-      <a href="#">
-        Компания
-      </a>
-    </li>
-    <li>
-      <a href="catalog.html">
-        Каталог
-      </a>
-    </li>
-    <li>
-      <a href="#">
-        Новости
-      </a>
-    </li>
-    <li>
-      <a href="#">
-        Спецпредложения
-      </a>
-    </li>
-    <li>
-      <a href="#">
-        Доставка
-      </a>
-    </li>
-    <li>
-      <a href="#">
-        Контакты
-      </a>
-    </li>
-  </ul>
+    <ul class="site-navigation notmark ">
+      <li>
+        <a>
+          Главная
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          Компания
+        </a>
+      </li>
+      <li>
+        <a href="catalog.html">
+          Каталог
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          Новости
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          Спецпредложения
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          Доставка
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          Контакты
+        </a>
+      </li>
+    </ul>
+  </div>
 </header>
 
 <!----------------------------------------------------------- КОНТЕНТ---------------------------------------->
-<main>
+<main class="holder">
   <h1 class="visually-hidden"> оборудование материалы инструмент для стройки</h1>
 <!------------------------------------Секция предлжений---------------------------------------------->
 <!---------------------------------------материалы----------------------------------------------------------------->
-  <section class="holder flex-item">
+  <section class="holder-items">
     <div class="row">
       <div class="main-item box-material new">
         <h2> Материалы</h2>
@@ -199,14 +193,14 @@ credit.png<!DOCTYPE html>
 <!------------------------------------------Список популярных товаров--------------------------------------------->
   <section class="main-popitems">
     <div class="pop-header">
-      <div class="holder pop-header-name">
+      <div class=" pop-header-name">
         <h1>популярные товары:</h1>
         <a href="catalog.html">
           все популярные товары
         </a>
       </div>
     </div>
-    <ul class="popitems notmark holder">
+    <ul class="popitems notmark ">
       <li>
         <img src="img/content/Bosch_BFG_9000.jpg" alt="перфоратор большой с фмрменной раскраской Bosch, работает от сети крепление сверла sdmax" width="218" height="168">
         <h1>Перфоратор BOSCH BFG 9000</h1>
@@ -235,12 +229,12 @@ credit.png<!DOCTYPE html>
 <!--------------------------------------------Список популярных производители----------------------------------->
   <section>
     <div class="pop-header">
-      <div class="holder pop-header-name">
+      <div class=" pop-header-name">
         <h1>популярные производители:</h1>
         <a href=""> все производители</a>
       </div>
     </div>
-      <ul class="poplable notmark holder">
+      <ul class="poplable notmark ">
         <li>
           <a href="#">
             <img src="img/content/lable/bosch.jpg" alt="логотип Бош" width="126" height="37">
@@ -285,7 +279,7 @@ credit.png<!DOCTYPE html>
   </section>
 <!--------------------------------------------Сервисы---------------------------------------------------------------->
   <section class="service">
-    <div class="holder">
+    <div class="">
       <div class="service-holder">
         <h1>
           cервисы
@@ -341,7 +335,7 @@ credit.png<!DOCTYPE html>
     </div>
   </section>
 <!-------------------------Разметка информационного блока------------------------------------------------------------>
-  <section class="holder info-holder">
+  <section class=" info-holder">
 <!------------------Разметка блока КОМПАНИЯ «Техномарт» --------------------------------------------------------->
     <div class="about">
       <h1>КОМПАНИЯ «Техномарт»</h1>
@@ -386,7 +380,7 @@ credit.png<!DOCTYPE html>
 </main>
 <!--------------------------------------------------ФУТЕР-------------------------------------------------->
 <!------------------------------ верхняя часть футера------------------------------------------>
-<footer>
+<footer class="holder">
 <!-------------------------------логотип + список------------------------------->
   <section class="main-footer">
 <!-----------------на главную ----------------->
