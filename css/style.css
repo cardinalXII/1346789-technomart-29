@@ -434,31 +434,31 @@ ul.site-navigation {
 /*---------------------------------------------------------index.html------------------------------------*/
 .holder-items{
 	display: flex;
+	box-sizing: border-box;
 	width: 940px;
 	margin-left: 130px;
 	margin-right: 130px;
 }
 .row{
+	box-sizing: border-box;
 	display: flex;
-	margin-bottom: 20px;
-
+	flex-direction: row;
+	flex-wrap: wrap;
 }
 .cols{
-	
 	display: flex;
 	flex-direction: column;
 }
 
-.main-item {
+.holder-item{
 	box-sizing: border-box;
-	display: inline-block;
-	font-size: 14px;
-	line-height: 18px;
-	color: #ffffff;
-	background-color: #e5e5e5;
-	margin-right: 20px;
+	display: flex;
+
+	width: 300px;
+	height: 123px;
 }
-.main-item h2{
+
+.holder-item h2{
 	font-size: 24px;
 	line-height: 30px;
 	font-weight: bold;
@@ -469,16 +469,13 @@ ul.site-navigation {
 	height: 25px;
 
 }
-.main-item a{
-	position: relative;
 
+.holder-item a{
+	
 	font-size: 14px;
 	line-height: 18px;
 	color: #ffffff;
 	text-transform: uppercase;
-
-	top: -35px;
-	left: 20px;
 
 	width: 135px;
 	height: 38px;
@@ -493,107 +490,41 @@ ul.site-navigation {
 	padding: 9px 10px;
 
 }
-.main-item a:hover{
+.holder-item a:hover{
 	background-color: #cccccc;
 
 }
-.main-item a:focus{
+.holder-item a:focus{
 	background-color: #b2b2b2;
 }
 
-
-
-.box-material svg{
-	position: relative;
-
-	top:-35px;
-	left: 80px;
-
-	width: 44px;
-	height: 65px;
-}
-.box-material{
-	width: 300px;
-	height: 123px;
+.material{
 	background-color:#ffbf47;
 }
 
-
-.box-instrument svg{
-	position: relative;
-
-	top:-35px;
-	left: 80px;
-
-	width: 75px;
-	height: 65px;
-}
-
-.box-instrument{
-	width: 300px;
-	height: 123px;
+.tools{
 	background-color: #3bbce3;
 }
 
-.box-tech svg{
-	position: relative;
-
-	top:-35px;
-	left: 80px;
-
-	width: 80px;
-	height: 65px;
-}
-.box-tech{
-	width: 300px;
-	height: 123px;
+.tech{
 	background-color: #dc91d8;
 }
 
-.box-discont svg{
-	position: relative;
-
-	top:-35px;
-	left: 80px;
-
-	width: 60px;
-	height: 75px;
-}
-.box-discont{
-	width: 300px;
-	height: 123px;
-	background-color: #8ed78f;
-	margin-bottom: 20px;
-
+.discont{
+	background-color: #8ed78f;	
 }
 
-.box-delivery svg{
-	position: relative;
-
-	top:-35px;
-	left: 80px;
-
-	width: 80px;
-	height: 65px;
-}
-.box-delivery{
-	width: 300px;
-	height: 123px;
+.delivery{
 	background-color: #ffc047;
 }
 /*------------------------------слайдер-------------------------*/
-.slider{
-	position: absolute;
-	top: 522px;
-}
-.slider1{
+.holder-sliders{
 	display: flex;
-	position: relative;
-}
-.slider2{
-	display: flex;
-	position: relative;
-	top: -266px;
+	flex-direction: row;
+	box-sizing: border-box;
+	width: 620px;
+	height: 266px;
+
 }
 .slider h1{
 	font-size: 31px;
@@ -613,17 +544,12 @@ ul.site-navigation {
 	margin: 2px 0;
 
 }
-.nameslide{
-	position: absolute;
-	margin: 35px 25px;
+.name-slide{
+	border: 2px solid red;
 }
 .opencat{
-	position: absolute;
-	display: inline-block;
 	box-sizing: border-box;
-	top: 205px;
-	left: 25px;
-
+	
 	width: 195px;
 	height: 38px;
 
@@ -646,61 +572,42 @@ ul.site-navigation {
 }
 
 .btnleft{
-	position: absolute;
-	display: inline-block;
+	display: flex;
 	box-sizing: border-box;
 	background-color: transparent;
 	border: none;
-
-	top: 115px;
-	left: 25px;
-
 }
 .btnright{
-	position: absolute;
-	display: inline-block;
+	
+	display: flex;
 	box-sizing: border-box;
 	background-color:transparent;
 	border: none;
-
-	top: 115px;
-	left: 578px;
-
 }
 .indicator1{
 	box-sizing: border-box;
-	position: absolute;
+	
 	width: 10px;
 	height: 10px;
-
-	top: 220px;
-	left: 290px;
-
+	
 	border-radius: 100%;
 	background-color: #ffffff;
 }
 .indicator2{
 	box-sizing: border-box;
-	position: absolute;
 	width: 10px;
 	height: 10px;
-
-	top: 220px;
-	left: 312px;
-
+	
 	border: 2px solid #ffffff;
 	border-radius: 100%;
 	background-color: #ee3643;
 }
 .indicator4{
 	box-sizing: border-box;
-	position: absolute;
+	
 	width: 10px;
 	height: 10px;
-
-	top: 740px;
-	left: 505px;
-
+	
 	border: 2px solid #ffffff;
 	border-radius: 100%;
 	background-color: #ee3643;
@@ -708,12 +615,9 @@ ul.site-navigation {
 }
 .indicator3{
 	box-sizing: border-box;
-	position: absolute;
+	
 	width: 10px;
 	height: 10px;
-
-	top: 740px;
-	left: 505px;
 
 	border: 2px solid #ffffff;
 	border-radius: 100%;
@@ -721,18 +625,24 @@ ul.site-navigation {
 	z-index: 3
 }
 
-
-
 /*------------------------------------------Список популярных товаров---------------------------------------------*/
-.pop-header{
+.column{
+	flex-direction: column;
+}
+.header{
+	display: flex;
 	background-color:#f9f5f0;
+	margin-bottom: 20px;
+	
 }
-.pop-header-name{
-     width: 960px;
-     justify-content: space-between;
-     align-items: center;
+.lable{
+	display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
 }
-.pop-header h1{
+.choice{
+	padding-left: 28px;
 	font-size: 30px;
 	line-height: 30px;
 	font-weight: bold;
@@ -740,7 +650,7 @@ ul.site-navigation {
 	text-transform: uppercase;
 
 }
-.pop-header a{
+.btn-choice{
 	box-sizing: border-box;
 	width: 253px;
 	height: 38px;
@@ -752,33 +662,36 @@ ul.site-navigation {
 	text-align: center;
 
 	background-color: #ee3643;
-	border-radius: 5px;
+	border-radius: 1px;
 
 	padding: 10px;
+	margin-right: 14px; 
 
 }
-.pop-header a:hover,
+.btn-choice:hover,
 .info a:hover,
 a.writeus:hover{
-	background-color: #ca2c37;
+	background-color: #CA2C37;
 }
-.pop-header a:focus,
+.header a:focus,
 .info a:focus,
 a.writeus:focus{
 	background-color:#ba2732;
 }
-ul.popitems{
-	margin: 170;
-	padding: 0;
-}
+
 .popitems{
-	width: 960px;
+	display: flex;
+	box-sizing: border-box;
+	padding: 0;
 	justify-content: space-between;
 }
 
 .popitems li{
 	width: 220px;
 	height: 318px;
+
+	margin-bottom: 70px; 
+
 	border: 1px solid #eaeaea;
 }
 .popitems h1{
@@ -832,7 +745,7 @@ ul.popitems{
 	border: 20px solid #ffffff;
 	border-left-color: #ee3643;
 }
-.new-item .price{
+.price{
 	margin-top: 15px;
 	padding: 11px 30px;
 
@@ -840,8 +753,6 @@ ul.popitems{
 .new-item:before {
   content: "";
   position: absolute;
-  top: 870px;
-  left: 1070px;
   z-index: 10;
 
   width: 60px;
@@ -849,17 +760,19 @@ ul.popitems{
 
   background: url(../img/new.png) no-repeat 0 0;
 }
-ul.poplable{
-	width: 960px;
-	margin: 0;
-	padding: 0;
-	margin-left: 170px;
-	margin-right: 170px;
+
+.poplable{
+	box-sizing: border-box;
+	display: flex;
+	flex-wrap: wrap;
+
+	margin-bottom: 70px;
 }
+
 .poplable li{
 	box-sizing: border-box;
-	width: 222px;
-	height: 144px;
+	width: 220px;
+	height: 145px;
 	border: 1px solid #eaeaea;
 	text-align: center;
 	margin-right: 20px;
@@ -869,9 +782,7 @@ ul.poplable{
   margin-right: 0;
 }
 .poplable li:hover{
-
 	box-shadow: 0px 12px 50px -20px black;
-
 }
 .poplable li:focus{
 	box-shadow: 0px 12px 50px -20px black;
@@ -897,44 +808,60 @@ ul.poplable{
 
 
 /*--------------------------------------------Сервисы компания и контаты----------------------------------------------------------------*/
-.service{
+.holder-service{
+	display: flex;
+	flex-wrap: wrap;
+	box-sizing: border-box;
 	background-color: #f4f8f9;
-	height: 510px;
-}
-.service-{
-	margin-top: 65px;
-	width: 400px;
-	height: 150px;
-}
-.serivce-menu{
-	position: absolute;
+	height: 522px;
 
-	top:1800px;
-	left:170px;
-	margin-top: 30px;
+	padding-left: 130px;
+	padding-right: 130px;
 }
-.img-side{
-	margin-top: 30px;
-	position: absolute;
-	width: 12px;
-	height: 260px;
+.header-service{
+	display: flex;
+	flex-direction: column;
 
-	top:1765px;
-	left: 403px;
-	background-image: url(../img/vert_menu_service.png);
-	background-repeat: no-repeat;
-	border: 1px solid transparent;
-	z-index: 3;
+	box-sizing: border-box;
+
+	width: 100%;
+
+	padding-top: 64px;
 }
-.service h1{
-	margin: 0px;
-	margin-bottom: 35px;
+
+.lable-service{
+	font-family: "cuprum";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 30px;
+	line-height: 30px;
+	text-transform: uppercase;
+
+	margin-bottom: 25px;
 }
-.serivce-menu li{
+
+.description-service{
+	font-family: "ptsans";
+	font-style: normal;
+	font-weight: normal;
+	font-size: 13px;
+	line-height: 24px;
+
+	width: 394px;
+
+	margin: 0;
+	padding: 0;
+}
+
+.menu-serivce{
+	margin-top: 70px;
+}
+
+.menu-serivce li{
 	box-sizing: border-box;
 	height: 64px;
 }
-.serivce-menu a{
+.menu-serivce a{
 	box-sizing: border-box;
 	display: inline-block;
 	width: 240px;
@@ -945,14 +872,28 @@ ul.poplable{
 	padding-top: 20px;
 	padding-left: 20px;
 }
-.serivce-menu a:hover{
+.menu-serivce a:hover{
 	background-color:#293449;
 }
-.serivce-menu a:focus{
+.menu-serivce a:focus{
 	background-color:#ffffff;
 	color: #293449;
 }
-.service h1,
+
+.img-side{
+	margin-top: 30px;
+	position: absolute;
+	width: 10px;
+	height: 279px;
+
+	top:2022px;
+	left: 360px;
+	background-image: url(../img/vert_menu_service.png);
+	background-repeat: no-repeat;
+	border: 1px solid transparent;
+	z-index: 3;
+}
+
 .contact h1,
 .about h1,
 .popup-contact h1{
@@ -963,7 +904,7 @@ ul.poplable{
 	text-transform: uppercase;
 
 }
-.service p,
+
 .about p,
 .contact p,
 .about p,
