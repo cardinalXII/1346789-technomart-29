@@ -1,29 +1,34 @@
 @font-face{
 	font-family: cuprum;
-	src:local("fonts/cuprum.woff2"),
-		local("fonts/cuprum.woff");
-
+	src:local("cuprum.woff2"),
+		local("cuprum.woff");
+}		
+@font-face{
 	font-family: cuprumbold;
-	src:local("fonts/cuprumbold.woff2"),
+	src:local("cuprumbold.woff2"),
 		local("fonts/cuprumbold.woff"),
 	font-weight: bold;
-
+}		
+@font-face{
 	font-family: cuprumitalic;
-	src:local("fonts/cuprumitalic.woff2"),
-		local("fonts/cuprumitalic.woff");
-
+	src:local("cuprumitalic.woff2"),
+		local("cuprumitalic.woff");
+}		
+@font-face{
 	font-family: cuprumbolditalic;
-	src:local("fonts/cuprumbolditalic.woff2"),
-		local("fonts/cuprumbolditalic.woff"),
+	src:local("cuprumbolditalic.woff2"),
+		local("cuprumbolditalic.woff"),
 	font-weight: bold;
-
+}		
+@font-face{
 	font-family: ptsans;
-	src:local("fonts/ptsans.woff2"),
-		local("fonts/ptsans.woff");
-	
+	src:local("ptsans.woff2"),
+		local("ptsans.woff");
+}		
+@font-face{	
 	font-family: ptsansbold;
-	src:local("fonts/ptsansbold.woff2"),
-		local("fonts/ptsansbold.woff");
+	src:local("ptsansbold.woff2"),
+		local("ptsansbold.woff");
 	font-weight: bold;	
 }
 
@@ -571,13 +576,13 @@ ul.site-navigation {
 	padding: 0;
 }
 
-.btnleft{
+.btn-left{
 	display: flex;
 	box-sizing: border-box;
 	background-color: transparent;
 	border: none;
 }
-.btnright{
+.btn-right{
 	
 	display: flex;
 	box-sizing: border-box;
@@ -1802,11 +1807,11 @@ li.icons:focus{
 	line-height: 18px;
 	font-weight: 400;
 }
-.btnorder{
+.btn-order{
 	background-color:  #ee3643;
 	color: #ffffff;
 }
-.btnbuy{
+.btn-buy{
 	background-color:  #ffffff;
 	color: #000000;
 }
