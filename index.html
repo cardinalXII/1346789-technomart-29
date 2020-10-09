@@ -6,18 +6,18 @@
     <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-<header class="holder">
+<header class="container">
 <!------------------------------------------Верхнее меню хедера----------------------------------->
-  <div class="top-menu">
+  <div class="header-top">
 <!----------------------------------------------Логотип-------------------------------------------------->
-    <a class="logo">
+    <a class="header-logo">
       ТЕХНОМАРТ
     </a>
 <!-----------------------------------------поиск------------------------------------------------->
-    <div class="searching-form">
+    <div class="header-search">
 <!---------- иконка поиска--------->
       <img src="img/svg/icon-search.svg" alt="Поиск">
-      <form action="https://echo.htmlacademy.ru"  class="" id="serchout" method="POST">
+      <form action="https://echo.htmlacademy.ru"  class="searching" id="searching" method="POST">
         <label for="search">
           <span class="visually-hidden"> Поиск:</span>
         </label>
@@ -25,52 +25,52 @@
       </form>
     </div>
 <!----------------------------------------закладки---------------------------------------------->
-      <label for="bookmark" class="lable-holder">
-        <a href="#">
-          <!-- ---------иконка закладок------->
-          <img src="img/svg/icon-bookmark.svg" alt="Закладки">
-          Закладки:<output name="bookmark" id="bookmark">0</output>
-        </a>
-      </label>
+    <label for="bookmark" class="header-menu">
+      <a href="#">
+        <!-- ---------иконка закладок------->
+        <img src="img/svg/icon-bookmark.svg" alt="Закладки">
+        Закладки:<output name="bookmark" id="bookmark">0</output>
+      </a>
+    </label>
 <!----------------------------------------Корзина------------------------------------------------------->
 <!-----------иконка Корзины-------->
-      <label for="cart" class="lable-holder">
-        <a href="#" class="cart">
-          <img src="img/svg/icon-cart.svg" alt="Корзина">
-          Корзина:<output name="cart" id="cart">10</output>
-        </a>
-      </label>
+    <label for="cart" class="header-menu">
+      <a href="#" class="header-cart">
+        <img src="img/svg/icon-cart.svg" alt="Корзина">
+        Корзина:<output name="cart" id="cart">10</output>
+      </a>
+    </label>
 <!---------------------------------------оформление заказа-------------------------------------------->
-    <a href="#" class="checkout-holder">
-      <span class="checkout">Оформить заказ</span>
+    <a href="#" class="header-checkout">
+      <span class="header-checkout--text">Оформить заказ</span>
     </a> 
   </div>
 <!------------------------------------- СРЕДНЯЯ ЧАСТЬ ХЕДЕРА ------------------------------->
-  <div class="middle-menu">
-    <div class="main-information">
-      <span class="text">
+  <div class="header-middle">
+    <div class="header-information">
+      <span class="header-information--redtext">
         Интернет-магазин строительных материалов <br>и инструментов для ремонта
      </span>
     </div>
-    <div class="contacts">
-      <a href="tel:+78125550555" class="phone">
+    <div class="header-contacts">
+      <a href="tel:+78125550555" class="header-phone">
 <!------------ иконка телефона ------------------------>
         <img src="img/svg/icon-phone.svg" alt="телефон">
         <span> +7 (812) 555-05-55</span>
       </a>
-      <div class="adress">
+      <div class="header-adress">
         г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
       </div>
     </div>
 <!-----------------------------------------МЕНЮ ПОЛЬЗОВАТЕЛЯ----------------------------------------------->
 <!----------------------------------------------логин------------------------------------------------->
-    <div class="user-menu">
-      <a href="#" class="enter">
+    <div class="header-personal-area">
+      <a href="#" class="header-personal-area__enter">
 <!-----------------иконка входа ----------------------------------->
         <img src="img/svg/icon-login.svg" alt="вход">Войти
       </a>
 <!----------------------------------------регистрация------------------------------------------------->
-      <a href="#" class="registration">Регистрация</a>
+      <a href="#" class="header-personal-area__registration">Регистрация</a>
     </div>
 <!----------------------------------------------НИЖНЕЕ МЕНЮ ХЕДЕРА ------------------------------>
     <ul class="site-navigation notmark ">
@@ -114,7 +114,7 @@
 </header>
 
 <!----------------------------------------------------------- КОНТЕНТ---------------------------------------->
-<main class="holder">
+<main class="container">
   <h1 class="visually-hidden"> оборудование материалы инструмент для стройки</h1>
 <!------------------------------------Секция предлжений---------------------------------------------->
 <!---------------------------------------материалы----------------------------------------------------------------->
@@ -386,7 +386,7 @@
 </main>
 <!--------------------------------------------------ФУТЕР-------------------------------------------------->
 <!------------------------------ верхняя часть футера------------------------------------------>
-<footer class="holder">
+<footer class="container">
 <!-------------------------------логотип + список------------------------------->
   <section class="main-footer">
 <!-----------------на главную ----------------->

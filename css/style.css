@@ -1,34 +1,35 @@
 @font-face{
 	font-family: cuprum;
-	src:local("cuprum.woff2"),
-		local("cuprum.woff");
+	src:url("../fonts/cuprum.woff2"),
+		url("./fonts/cuprum.woff");
+	font-weight: 
 }		
 @font-face{
-	font-family: cuprumbold;
-	src:local("cuprumbold.woff2"),
-		local("fonts/cuprumbold.woff"),
+	font-family: cuprum;
+	src:url("../fonts/cuprumbold.woff2"),
+		url("../fonts/cuprumbold.woff"),
 	font-weight: bold;
 }		
 @font-face{
-	font-family: cuprumitalic;
-	src:local("cuprumitalic.woff2"),
-		local("cuprumitalic.woff");
+	font-family: cuprum;
+	src:url("../fonts/cuprumitalic.woff2"),
+		url("cuprumitalic.woff");
 }		
 @font-face{
-	font-family: cuprumbolditalic;
-	src:local("cuprumbolditalic.woff2"),
-		local("cuprumbolditalic.woff"),
+	font-family: cuprum;
+	src:url("../fonts/cuprumbolditalic.woff2"),
+		url("../fonts/cuprumbolditalic.woff"),
 	font-weight: bold;
 }		
 @font-face{
 	font-family: ptsans;
-	src:local("ptsans.woff2"),
-		local("ptsans.woff");
+	src:url("../fonts/ptsans.woff2"),
+		url("../fonts/ptsans.woff");
 }		
 @font-face{	
-	font-family: ptsansbold;
-	src:local("ptsansbold.woff2"),
-		local("ptsansbold.woff");
+	font-family: ptsans;
+	src:url("../fonts/ptsansbold.woff2"),
+		url("../fonts/ptsansbold.woff");
 	font-weight: bold;	
 }
 
@@ -39,7 +40,7 @@ body {
 	font-family: "cuprum", "ptsans", Arial, sans-serif;
 	font-size: 18px;
 	line-height: 24px;
-	font-weight: 700;
+	font-weight: 400;
 	color: black;
 	text-transform: none;
 
@@ -82,28 +83,27 @@ input[type="radio"].visually-hidden {
 	padding: 0;
 }
 
-.holder{
+.container{
 	width: 1200px;
-	height: 100%;
 	margin-left: auto;
 	margin-right: auto;
 }
 
 /* ---------------------------общее форматирование хедера-----------------*/
 
-.top-menu{
+.header-top{
 	display: flex;
 	flex-wrap: wrap;
 	background-color:#293449;
-	width: 1200px;
-	height: 42px;
+	width: 100%;
+	
 	padding-right: 130px;
 	padding-left: 130px;
 	box-sizing: border-box;
 	
 }
 
-.middle-menu{
+.header-middle{
 	display: flex;
 	flex-wrap: wrap;
 	background-color:#f3f6f8;
@@ -112,7 +112,7 @@ input[type="radio"].visually-hidden {
  }
 
 /* -------------------------форматирование хедера-------------- */
-.logo{
+.header-logo{
 	box-sizing: border-box;
 	background-color:#ee3643;
 
@@ -132,7 +132,7 @@ input[type="radio"].visually-hidden {
 	box-shadow: inset 0px -5px 0px #8e1e26;
 }
 /*-------------------------Форма поиска---------------------*/
-.searching-form{
+.header-search{
 	box-sizing: border-box;
 	display: flex;
 	color: #ffffff;
@@ -143,20 +143,20 @@ input[type="radio"].visually-hidden {
 	padding-left: 18px;
 	align-items: center;
 }
-.searching-form input{
+.header-search input{
 	border: none;
 	background-color:#293449;
 
 	font-size: 17px;
 	line-height: 18px;
 }
-.searching-form: focus{
+.header-search: focus{
 	background-color:#ffffff;
 	color: black;
 }
 
 /*-------------------------Границы кнопок верхнего меню---------------------*/
-.lable-holder{
+.header-menu{
 	box-sizing: border-box;
 	display: flex;
 	width: 140px;
@@ -166,12 +166,12 @@ input[type="radio"].visually-hidden {
 
 }
 
-.cart{
+.header-cart{
 	box-sizing: border-box;
 	border: 2px solid red;
 }
 /*-------------------------Кнопка оформления заказа---------------------*/
-.checkout-holder{
+.header-checkout{
 	box-sizing: border-box;
 	display: flex;
 	background-color:#63a63e;
@@ -186,15 +186,13 @@ input[type="radio"].visually-hidden {
 	align-items: center;
 }
 
-.checkout{
+.header-checkout--text{
 	box-sizing: border-box;
 	font-family: cuprum;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 18px;
 	line-height: 24px;
-	display: flex;
-	align-items: center;
 }
 a.checkout:hover{
 	background-color:#5fbb2d;
@@ -206,15 +204,14 @@ a.checkout:focus{
 }
 
 /*-------------------------средняя часть хедера---------------------*/
-.main-information{
+.header-information{
 	box-sizing: content-box;
 	display: flex;
 	width: 205px;
 	height: 71px;
 	margin-left: 160px;	
 }
-.text{
-	box-sizing: content-box;
+.header-information--redtext{
 	font-family: cprum;
 	font-size: 16px;
 	font-style: italic;
@@ -226,7 +223,7 @@ a.checkout:focus{
 
 
  }
-.contacts{
+.header-contacts{
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
@@ -236,10 +233,10 @@ a.checkout:focus{
 	margin-left: 20px;
 }
 
-.contact svg{
+.header-contact svg{
 	margin-right: 40px;
 }
-.phone{
+.header-phone{
 	display: flex;
 	justify-content: center;
 	box-sizing: border-box;
@@ -257,7 +254,7 @@ a.checkout:focus{
 
 	align-items: center;
 }
-.adress{
+.header-adress{
 	display: flex;
 	box-sizing: border-box;
 	width: 250px;
@@ -273,7 +270,7 @@ a.checkout:focus{
 	align-items: center;
 }
 
-.user-menu{
+.header-personal-area{
 	width: 285px;
 	display: flex;
 	flex-wrap: wrap;
