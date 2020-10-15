@@ -45,7 +45,7 @@ body {
 	text-transform: none;
 
 	background-color: white;
-	background-image:url(../img/content/main_bg.png);
+	
 	background-position: top center;
 	background-repeat: no-repeat;
 }
@@ -890,7 +890,7 @@ a.writeus:focus{
 
 	top:2022px;
 	left: 360px;
-	background-image: url(../img/vert_menu_service.png);
+	background-image: url(../img/vert-divider.png);
 	background-repeat: no-repeat;
 	border: 1px solid transparent;
 	z-index: 3;
